@@ -4,7 +4,7 @@ import "fmt"
 
 func findMaxAvg(arr []int, k int) float64 {
 	currentSum := 0
-	for i := 0; i < k; i++ {
+	for i := range k {
 		currentSum += arr[i]
 	}
 	maxSum := currentSum
