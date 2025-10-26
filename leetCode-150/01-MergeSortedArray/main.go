@@ -1,6 +1,7 @@
 package main
 
 // Brute-forece approche 
+
 func mergeSortedArr(num1 []int, num2 []int, m, n int) {
 	for i := 0; i < len(num1); i++ {
 		ele := num2[i]
@@ -13,4 +14,8 @@ func mergeSortedArr(num1 []int, num2 []int, m, n int) {
 		}
 		num1[j] = ele
 	}
+}
+
+func mergeSortedArrByTwoPointer(num1 []int ,num2 []int,m,n int)  {
+	
 }
