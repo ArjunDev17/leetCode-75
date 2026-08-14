@@ -8,18 +8,21 @@ func PrintToStringCh(str, str1 string) {
 
 // Print Characters Alternately
 func PrintToStringCharAlterNative(str, str1 string) {
-	for i := 0; i < len(str) || i < len(str1); i++ {
-		if len(str) > 0 {
+	a,b:=0,0
+	for i := 0; (i < len(str) || i < len(str1)); i++ {
+		if len(str)-1 >= a {
 			fmt.Printf(" %c ", str[i])
+			a++
 		}
-		if len(str1) > 0 {
-			fmt.Printf(" %c ", str1[i])
+		if len(str1) >= b {
+			fmt.Printf(" %c ", str1[i]) 
+			b++
 		}
 
 	}
 }
 
 func main() {
-	PrintToStringCharAlterNative("Ram", "Sheeta")
+	PrintToStringCharAlterNative("ab", "xyz")
 	//R S a h m e
 }
